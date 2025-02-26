@@ -1,6 +1,6 @@
 const repeatString = function(greeting, times) {
     if (times < 0)
-        return "more greetings please";
+        return "ERROR";
 
     let greet = "";
     
