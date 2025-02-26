@@ -2,9 +2,9 @@ const repeatString = function(greeting, times) {
     if (times < 0)
         return "more greetings please";
 
-    let greet = "hey";
+    let greet = "";
     
-    for (i = 1; i < times; i++) {
+    for (i = 0; i < times; i++) {
         greet += greeting;
     }
 
