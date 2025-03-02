@@ -12,7 +12,7 @@ const sumAll = function(num1, num2) {
     
     //iterable loop
 
-    if ((minNum < 0 || maxNum < 0) || (Number.isInteger(num1, num2) != true)) {
+    if ((minNum < 0 || maxNum < 0) || (!Number.isInteger(num1)) || (!Number.isInteger(num2))) {
         return "ERROR";
     } else {
         for (let i = minNum; i <= maxNum ; i++) {
