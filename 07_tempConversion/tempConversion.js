@@ -1,6 +1,8 @@
 const convertToCelsius = function(f) {
   //conversion
-  const celsius = ((f-32)*(5/9));
+  const cTemp = ((f-32)*(5/9));
+  //to one d.p
+  const celsius = Math.round(cTemp * 10) /10;
 
   console.log (celsius);
 
@@ -10,7 +12,9 @@ const convertToCelsius = function(f) {
 
 const convertToFahrenheit = function(c) {
   //conversion
-  const fahrenheit = (c*((9/5)+32));
+  const fTemp = (c*((9/5)+32));
+  //to one d.p
+  const fahrenheit = Math.round(fTemp * 10) /10;
 
   console.log (fahrenheit);
 
