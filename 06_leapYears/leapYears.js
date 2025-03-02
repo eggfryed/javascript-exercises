@@ -1,5 +1,11 @@
-const leapYears = function() {
+const leapYears = function(year) {
 
+console.log(year);
+
+//leap years are divisible by four
+if (year % 4 != 0) {
+    return false;
+} else return true;
 };
 
 // Do not edit below this line
