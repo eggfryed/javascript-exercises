@@ -12,7 +12,7 @@ const convertToCelsius = function(f) {
 
 const convertToFahrenheit = function(c) {
   //conversion
-  const fTemp = (c*((9/5)+32));
+  const fTemp = ((c*9/5)+32);
   //to one d.p
   const fahrenheit = Math.round(fTemp * 10) /10;
 
