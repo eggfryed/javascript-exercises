@@ -1,16 +1,15 @@
-const removeFromArray = function (array, toRemove) {
+const removeFromArray = function (array, ...toRemove) {
+  //new array
+  let newArray = [];
 
-  //find the position of the number to remove
-  index = array.indexOf(toRemove);
-  console.log (index);
-
-  //remove number from array
-  newArray = array.splice(index, 1);
-  console.log (newArray);
-
+  //create iterable loop
+  array.forEach(remove => {
+    if (!toRemove.includes(remove)) newArray.push(remove);
+  })
+ 
   //return new array
-  return (array);
-};
+  return newArray;
+}
 
 
 // Do not edit below this line
