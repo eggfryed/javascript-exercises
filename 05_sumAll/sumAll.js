@@ -11,9 +11,14 @@ const sumAll = function(num1, num2) {
     console.log (maxNum);
     
     //iterable loop
-    for (let i = minNum; i <= maxNum ; i++) {
+
+    if (minNum < 0 || maxNum < 0) {
+        return "ERROR";
+    } else {
+        for (let i = minNum; i <= maxNum ; i++) {
         result += i;
     }
+}
 
     //return result
     return result;
